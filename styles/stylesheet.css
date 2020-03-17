@@ -1,0 +1,30 @@
+body {
+  z-index: 2;
+}
+
+#app {
+  height: 100%;
+}
+
+.stars {
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  padding-bottom: 30%;
+  margin: 1.66%;
+}
+
+#logo {
+  width: 40%;
+}
+
+h1 {
+  font-size: 70%;
+  color: aliceblue;
+}

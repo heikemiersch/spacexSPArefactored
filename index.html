@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <link rel="stylesheet" href="styles/stars.css">
     <link rel="stylesheet" href="styles/stylesheet.css">
     <title>index</title>
@@ -13,8 +13,6 @@
 <body>
     <div id="app">
 
-        <img id="logo" src="img/spacexlogo.jpg" alt="spacex logo">
-
         <section class="stars">
             <div id="stars1"></div>
             <div id="stars2"></div>
@@ -22,12 +20,25 @@
 
 
             <div class="page active">
-                <button>Rockets</button>
-                <button>History</button>
-                <button>Chat</button>
+                <div class="container">
+
+                    <div class="box">
+                        <img id="logo" src="img/spacexlogo.jpg" alt="spacex logo">
+                        <button>Chat</button>
+                    </div>
+                    <div class="box">
+                        <h1>
+                            {{ message }}
+                        </h1>
+                    </div>
+                    <div class="box">
+                        <button>Rockets</button>
+                        <button>History</button>
+                        <button>Chat</button>
+                    </div>
+                </div>
+
             </div>
-
-
         </section>
     </div>
 
