@@ -1,19 +1,18 @@
 let app = new Vue({
     el: '#app',
     data: {
-        message: 'this is where "info.summary" goes',
-
+        companyInfo: ""
     },
+
     methods: {
         fetchSummaryData: function () {
             fetch("https://api.spacexdata.com/v3/info", {
                     method: "GET"
                 })
-                .then(function (response) {
-                    return response.json();
-                })
-                .then(function (info) {
+                .then(response => response.json())
+                .then(info => {
                     console.log(info.summary);
+                    this.companyInfo = info.summary;
                 })
                 .catch(function (error) {
                     console.log(error, "<-- error");
